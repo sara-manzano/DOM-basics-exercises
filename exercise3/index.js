@@ -9,11 +9,11 @@ const countries = [
 const cars = ['Mazda 6', 'Ford fiesta', 'Audi A4', 'Toyota Corolla'];
 
 const countriesImage = [
-	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1'}, 
-	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2'},
-	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3'},
-	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=4'},
-	{title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5'}
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=1' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=2' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=3' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=4' },
+    { title: 'Random title', imgUrl: 'https://picsum.photos/300/200?random=5' },
 ];
 
 // Genera un ul > li a partir de un array
@@ -27,16 +27,16 @@ function createList(items) {
     return ul;
 }
 
-//Lista de países en el body
+// Lista de países en el body
 document.body.appendChild(createList(countries));
 
-//Elimina el elemento marcado
+// Elimina el elemento marcado
 document.querySelector('.fn-remove-me')?.remove();
 
-//Lista de coches en el contenedor
+// Lista de coches en el contenedor
 document.querySelector('[data-function="printHere"]').appendChild(createList(cars));
 
-//Divs con h4 + img
+// Divs con h4 + img
 const fragment = document.createDocumentFragment();
 
 countriesImage.forEach(country => {
